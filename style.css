@@ -1,0 +1,51 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(./font/norse-bold-webfont.woff2);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+}
+.hero{
+    flex-basis: 37%;
+    background-image: url(./images/leaves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.hero>footer{
+    text-align: center;
+    margin-top: auto;
+}
+.hero>footer, .hero a{
+    color: white;
+}
+.logo-holder{
+    background-color: rgba(0 0 0 / 0.37);
+    height: auto;
+    padding: 10px;
+    color: white;
+    font-family: norse-bold;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.logo>img{
+    height: 6rem;
+    z-index: -1;
+}
+.logo>span, .logo>img{
+    vertical-align: middle;
+    margin-left: -15px;
+}
