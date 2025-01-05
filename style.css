@@ -92,14 +92,14 @@ body{
     font-size: 1rem;
     padding: 4px;
     border: 1px solid lightgray;
-    border-radius: 3px;
+    border-radius: 4px;
     width: 55%;
     
 }
 .input-wrapper label{
     font-size: 0.8rem;
-    letter-spacing: 0.5px;
-    font-weight: 530;
+    letter-spacing: 1.5px;
+    font-weight: 500;
 }
 .input-wrapper>div:nth-child(odd){
     margin-left: -12%;
@@ -121,4 +121,22 @@ body{
 
 .button-wrapper{
     padding-top: 35px;
+}
+.button-wrapper>button{
+    padding: 13px 40px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: none;
+    background-color: #3C6E35;
+    color: white;
+    box-shadow: 0 0 3px gray;
+    font-size: 1.1rem;
+}
+.button-wrapper>button:active{
+    background-color: #1C830C;
+}
+.button-wrapper>p>a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #3C6E35;
 }
