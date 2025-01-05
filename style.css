@@ -25,12 +25,13 @@ body{
 .hero>footer{
     text-align: center;
     margin-top: auto;
+    margin-bottom: 10px;
 }
 .hero>footer, .hero a{
     color: white;
 }
 .logo-holder{
-    background-color: rgba(0 0 0 / 0.37);
+    background-color: rgba(0 0 0 / 0.33);
     height: auto;
     padding: 10px;
     color: white;
@@ -56,6 +57,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-top: -20vh;
+    font-family: sans-serif;
 }
 .info, .input-wrapper, .button-wrapper{
     padding-left: 50px;
@@ -70,22 +72,53 @@ body{
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 25px;
-    row-gap: 12px;
+    padding-bottom: 45px;
+    row-gap: 15px;
+    box-shadow: 3px 5px 6px 2px lightgray;
 }
 .input-wrapper>p{
     flex-basis: 100%;
     font-weight: bold;
     font-size: 1.5rem;
+    margin-bottom: 8px;
 }
 .input-wrapper div{
     flex-basis: 50%;
     text-align: left;
+
+}
+.input-wrapper input{
+    height: 1.7rem;
+    font-size: 1rem;
+    padding: 4px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    width: 55%;
+    
+}
+.input-wrapper label{
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    font-weight: 530;
+}
+.input-wrapper>div:nth-child(odd){
+    margin-left: -12%;
+}
+.input-wrapper input:focus{
+    outline: none;
+    border: 1px solid #3961E5;
+    box-shadow: 0 0 3px #3961E5;
+}
+.input-wrapper input:invalid{
+    outline: none;
+    border: 1px solid red;
+}
+.input-wrapper input:focus:invalid{
+    outline: none;
+    border: 1px solid #3961E5;
+    box-shadow: 0 0 3px #3961E5;
 }
 
 .button-wrapper{
     padding-top: 35px;
-}
-.input-wrapper input{
-    width: 60%;
 }
